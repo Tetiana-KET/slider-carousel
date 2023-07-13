@@ -1,0 +1,36 @@
+.slider {
+  width: 60%;
+  margin: auto;
+}
+.slider_container {
+  overflow: hidden;
+  background-color: bisque;
+}
+.slider_track {
+  display: flex;
+  background-color: aqua;
+  transition: .3s;
+}
+.slider_item {
+  height: 100px;
+  /*ширина регулируется в зависимости от количества слайдов, которые нужно показать в JS*/
+  /* если указать просто width, то флекс контейнер пытается показать все элементы*/
+  /* min-width: 200px; */
+}
+.slider_item:nth-child(3n+1) {
+  background-color: blue;
+}
+.slider_item:nth-child(3n+2) {
+  background-color: red;
+}
+.slider_item:nth-child(3n+3) {
+  background-color: green;
+}
+.slider_buttons {
+  text-align: center;
+}
+.button_prev {
+}
+.button_next {
+}
+
